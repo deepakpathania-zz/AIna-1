@@ -2,12 +2,6 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var request = require('request')
 var app = express()
-var Twit = require('twit');
-var fs = require('fs');
-var hod = require('havenondemand');
-var config = require('./config');
-
-var T = new Twit(config);
 
 app.set('port', (process.env.PORT || 5000))
 
@@ -60,23 +54,8 @@ app.post('/webhook/', function (req, res) {
 var token = "CAAC7gT1FAs4BABcdEZBEyIUCPPdXEeT0IzSjv0qagoGvZC0RMzgZClqcaFkRVQ1jr00J3BxCmdmgolNcFgw4pAzHsadrZCfPAR1xbPWiOCDvXZAuEOkZBZB9p0UZC9OA476Xi3wHsiWIAO5g3ZAffP48TZCRYWPdeYCBScdWv8ExHUIqoHlMsiHVgpvQEwDdfJgCUZD";
 
 function sendTextMessage(sender, text) {
-    var params = {
-        q: 'CivilWar',
-        count: 1
-    }
-
-    T.get('search/tweets', params, gotData);
-
-    function gotData(err, data, response) {
-        // var tweets = data.statuses;
-        // var json = JSON.stringify(tweets, null, 2);
-        // fs.writeFile("tweet.json", json);
-        for (var i = 0; i < tweets.length; i++) {
-            console.log(tweets[i].text);
-        }
-    }
     messageData = {
-        text:tweets[0].text
+        text:text
     }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
@@ -94,8 +73,6 @@ function sendTextMessage(sender, text) {
         }
     })
 }
-
-
 
 
 function sendGenericMessage(sender) {
