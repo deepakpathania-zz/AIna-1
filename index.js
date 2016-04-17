@@ -95,8 +95,8 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Popularity Perception"
-                    "subtitle": "Popularity Perception Analyzer"
+                    "title": "Popularity Perception",
+                    "subtitle": "Popularity Perception Analyzer",
                     "image_url": "https://s3.amazonaws.com/media-p.slid.es/uploads/471316/images/2419155/graph.jpg",
                     "buttons": [{
                         "type": "web_url",
