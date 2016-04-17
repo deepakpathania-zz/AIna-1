@@ -97,7 +97,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "First card",
                     "subtitle": "Element #1 of an hscroll",
-                    "image_url": "graph.JPG",
+                    "image_url": "https://s3.amazonaws.com/media-p.slid.es/uploads/471316/images/2419155/graph.jpg",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.messenger.com",
