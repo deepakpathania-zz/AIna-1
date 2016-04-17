@@ -95,17 +95,13 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "First card",
+                    "title": "Popularity Percentage",
                     "subtitle": "Element #1 of an hscroll",
                     "image_url": "https://s3.amazonaws.com/media-p.slid.es/uploads/471316/images/2419155/graph.jpg",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://www.messenger.com",
-                        "title": "web url"
-                    }, {
-                        "type": "postback",
-                        "title": "Postback",
-                        "payload": "Payload for first element in a generic bubble",
+                        // "url": "https://www.messenger.com",
+                        "title": "Popularity Percentage"
                     }],
                 }]
             }
