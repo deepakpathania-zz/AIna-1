@@ -101,7 +101,7 @@ function sendGenericMessage(sender) {
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.messenger.com",
-                        "title": "Popularity Percentage: 50.0000000129%"
+                        "title": "50.0000000129% Popularity"
                     }, {
                         "type": "postback",
                         "title": "Share",
