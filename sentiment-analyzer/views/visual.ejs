@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse" style="background-color:#337ab7" role="navigation">
+  </nav>
+<center>		<h1 style="color: #337AB7;"><b>Popularity Graph</b></h1>
+                <div class="thumbnail ch">
+                    <div id="parent" class="canvas-div" style="padding-left: 18px">
+                      <canvas class="ch" id="updating-chart" height="500px;" width="900px;"></canvas>
+                    </div>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+   <script>
+    var canvas = document.getElementById('updating-chart'),
+  ctx = canvas.getContext('2d'),
+  startingData = {
+    labels: [1, 2, 3, 4, 5, 6],
+    datasets: [
+        {
+            fillColor: "#D7EAFB",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "#337AB7",
+            pointStrokeColor: "#fff",
+            data: [80,20,50, 65, 35,50.00001]
+        }
+    ]
+  },
+  latestLabel = startingData.labels[6];
+var myLiveChart = new Chart(ctx).Line(startingData, {animationSteps: 50});
+$('#myForm').submit(function () {
+  var x = document.getElementById("myForm");
+  myLiveChart.addData([x.elements[0].value, x.elements[1].value], x.elements[2].value);
+  myLiveChart.removeData();
+  myForm.reset();
+  return false;
+});
+  </script>
+  </center>
+</body>
+</html>

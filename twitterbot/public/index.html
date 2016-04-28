@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<style>
+body{padding-top:70px;}
+.dashboard-github{width:320px;height: 53px;margin-right:-15px;margin-left:-10px;}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="icon-vincent font14"></span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+<!--         <li><a href="http://it-wars.com" target="_blank"></a></li>
+        <li><a href="http://nodejs-news.com" target="_blank"></a></li>
+        <li><a href="http://fr.linkedin.com/in/vrabah/" target="_blank"></a></li> -->
+        <li>
+         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+         <ins class="adsbygoogle dashboard-github"
+              style="display:inline-block"
+              data-ad-client="ca-pub-6979767156529717"
+              data-ad-slot="3404763334"></ins>
+         <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
+         </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-sm-4">
+         <div class="well">
+                <form class="well" id="chat" >
+                    <label>Twitter filter</label>
+                    <input type="text" id="data" placeholder="Add a Twitter tracker…">
+                    <button type="submit" class="btn" onclick="addTrack(); return false;" >Submit</button>
+                </form>
+                <div class="well">
+                    <p>Twitter stream tracker(s):</p>
+                    <div id="tracker">
+                    </div>
+                </div>
+                <form class="well" id="twitter" >
+
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Analyze</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Popularity Percentage</h4>
+        </div>
+        <div class="modal-body">
+          <p>According to the analysis of last week's tweets your popularity percentage is: 67%</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+                </form>
+         </div>
+      </div>
+      <div class="col-sm-8">
+         <div class="well">
+                <div id="twitter-stream">
+            	  <ul class="unstyled"></ul>
+                </div>
+         </div>
+      </div>
+   </div>
+</div>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/myscript.js"></script>
+</body>
+</html>

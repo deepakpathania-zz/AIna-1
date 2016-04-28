@@ -1,0 +1,19 @@
+{
+  "name": "twitter-stream",
+  "keywords": [
+    "websocket",
+    "socket",
+    "realtime",
+    "socket.io",
+    "twitter"
+  ],
+  "author": {
+    "name": "Aditya Chawla",
+    "email": "chawlaaditya8@gmail.com"
+  },
+  "dependencies": {
+    "socket.io": "0.9.16",
+    "ntwitter": "0.5.0",
+    "express": "4.0.0"
+  }
+}

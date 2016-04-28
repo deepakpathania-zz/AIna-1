@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Project Analysis</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <style type="text/css">
+    #myForm input{
+      margin-top: 30px;
+    }
+    .cssload-thecube {
+      width: 73px;
+      height: 73px;
+      margin: 0 auto;
+      margin-top: 49px;
+      position: relative;
+      transform: rotateZ(45deg);
+        -o-transform: rotateZ(45deg);
+        -ms-transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+        -moz-transform: rotateZ(45deg);
+    }
+    .cssload-thecube .cssload-cube {
+      position: relative;
+      transform: rotateZ(45deg);
+        -o-transform: rotateZ(45deg);
+        -ms-transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+        -moz-transform: rotateZ(45deg);
+    }
+    .cssload-thecube .cssload-cube {
+      float: left;
+      width: 50%;
+      height: 50%;
+      position: relative;
+      transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+    }
+    .cssload-thecube .cssload-cube:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(43,160,199);
+      animation: cssload-fold-thecube 2.76s infinite linear both;
+        -o-animation: cssload-fold-thecube 2.76s infinite linear both;
+        -ms-animation: cssload-fold-thecube 2.76s infinite linear both;
+        -webkit-animation: cssload-fold-thecube 2.76s infinite linear both;
+        -moz-animation: cssload-fold-thecube 2.76s infinite linear both;
+      transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+    }
+    .cssload-thecube .cssload-c2 {
+      transform: scale(1.1) rotateZ(90deg);
+        -o-transform: scale(1.1) rotateZ(90deg);
+        -ms-transform: scale(1.1) rotateZ(90deg);
+        -webkit-transform: scale(1.1) rotateZ(90deg);
+        -moz-transform: scale(1.1) rotateZ(90deg);
+    }
+    .cssload-thecube .cssload-c3 {
+      transform: scale(1.1) rotateZ(180deg);
+        -o-transform: scale(1.1) rotateZ(180deg);
+        -ms-transform: scale(1.1) rotateZ(180deg);
+        -webkit-transform: scale(1.1) rotateZ(180deg);
+        -moz-transform: scale(1.1) rotateZ(180deg);
+    }
+    .cssload-thecube .cssload-c4 {
+      transform: scale(1.1) rotateZ(270deg);
+        -o-transform: scale(1.1) rotateZ(270deg);
+        -ms-transform: scale(1.1) rotateZ(270deg);
+        -webkit-transform: scale(1.1) rotateZ(270deg);
+        -moz-transform: scale(1.1) rotateZ(270deg);
+    }
+    .cssload-thecube .cssload-c2:before {
+      animation-delay: 0.35s;
+        -o-animation-delay: 0.35s;
+        -ms-animation-delay: 0.35s;
+        -webkit-animation-delay: 0.35s;
+        -moz-animation-delay: 0.35s;
+    }
+    .cssload-thecube .cssload-c3:before {
+      animation-delay: 0.69s;
+        -o-animation-delay: 0.69s;
+        -ms-animation-delay: 0.69s;
+        -webkit-animation-delay: 0.69s;
+        -moz-animation-delay: 0.69s;
+    }
+    .cssload-thecube .cssload-c4:before {
+      animation-delay: 1.04s;
+        -o-animation-delay: 1.04s;
+        -ms-animation-delay: 1.04s;
+        -webkit-animation-delay: 1.04s;
+        -moz-animation-delay: 1.04s;
+    }
+
+
+
+@keyframes cssload-fold-thecube {
+  0%, 10% {
+    transform: perspective(136px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+        75% {
+    transform: perspective(136px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+        100% {
+    transform: perspective(136px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@-o-keyframes cssload-fold-thecube {
+  0%, 10% {
+    -o-transform: perspective(136px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+        75% {
+    -o-transform: perspective(136px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+        100% {
+    -o-transform: perspective(136px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes cssload-fold-thecube {
+  0%, 10% {
+    -ms-transform: perspective(136px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+        75% {
+    -ms-transform: perspective(136px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+        100% {
+    -ms-transform: perspective(136px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes cssload-fold-thecube {
+  0%, 10% {
+    -webkit-transform: perspective(136px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+        75% {
+    -webkit-transform: perspective(136px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+        100% {
+    -webkit-transform: perspective(136px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes cssload-fold-thecube {
+  0%, 10% {
+    -moz-transform: perspective(136px) rotateX(-180deg);
+    opacity: 0;
+  }
+  25%,
+        75% {
+    -moz-transform: perspective(136px) rotateX(0deg);
+    opacity: 1;
+  }
+  90%,
+        100% {
+    -moz-transform: perspective(136px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+.hr{
+  border-color:#337ab7;
+}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse" style="background-color:#337ab7" role="navigation">
+  </nav>
+  <center>
+    <div class="container">
+    <h1 style="color:#337ab7;font-size:50px"><b>Product Analysis</b></h1>
+    <hr/>
+        <span style="font-size: 17px;font-weight: bold" ><b>Enter your Company-product name: </b></span>
+        <input type="textarea" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apple-iPhone6"></input>&nbsp;&nbsp;
+        <button class="btn btn-primary btn2">Analyze</button>
+          <div class="cssload-thecube champu"  style="display:none; margin-left: 550px; margin-bottom: -50px;">
+           <div class="cssload-cube cssload-c1"></div>
+          <div class="cssload-cube cssload-c2"></div>
+          <div class="cssload-cube cssload-c4"></div>
+          <div class="cssload-cube cssload-c3"></div>
+          </div> 
+        <div class="row">
+            <div class="col-md-3">
+              <!-- <form id="myForm" class="row">
+                <label class="col-xs-6">Value for A</label><input class="col-xs-6" type="text" name="fname">
+                <label class="col-xs-6">Value for B </label><input class="col-xs-6" type="text" name="lname">
+                <label class="col-xs-6">Labbel </label><input class="col-xs-6" type="text" name="label">
+                <input class="submit btn btn-primary pull-right" type="submit" value="Send" />
+              </form> -->
+            </div>
+            <div class="col-md-12 ">
+<!--                 <div class="thumbnail ch">
+                    <div id="parent" class="canvas-div" style="padding-left: 18px">
+                      <canvas class="ch" style="display:none;" id="updating-chart"></canvas>
+                    </div>
+                </div> -->
+                <span class="data" style="display:none; margin-top: 100px; margin-left: -50px;"><br /><strong>Popularity Percentage: </strong><%= l %>%<br />
+                <br/>
+                <div class="row">
+                <div class="col-md-5 col-md-push-1">
+                <ul><b>Areas to work upon :</b> 
+                <li style="width:10px">quality</li>
+                <li style="width:10px">packaging</li>
+                <li style="width:10px">services</li>
+                <li style="width:10px">heating</li>
+                <li style="width:10px">battery</li>
+                </ul>
+                </div>
+                <div class="col-md-5">
+                <ul><b>Areas you excel in :</b> 
+                <li style="width:10px">product</li>
+                <li style="width:10px">budget</li>
+                <li style="width:15px">build quality</li>
+                <li style="width:10px">display</li>
+              
+                </ul>
+                </div>
+                </div>
+                <a class="btn btn-primary btn1 btn-lg" href="visual">Visualize</a></span>
+        
+            </div>
+        </div>
+        </center>
+    </div>
+    <div class="container">
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+            </div>
+        </footer>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".btn2").click(function(){
+          $(".champu").show();
+      });
+      $(".btn2").click(function(){
+setTimeout(
+  function() 
+  {
+    //do something special
+          $(".champu").hide();
+          $(".data").show();
+  }, 5000);
+      });
+     $(".btn1").click(function(){
+          $(".ch").show();
+        });
+    });
+
+  </script>
+  <script>
+    var canvas = document.getElementById('updating-chart'),
+  ctx = canvas.getContext('2d'),
+  startingData = {
+    labels: [1, 2, 3, 4, 5, 6, 7],
+    datasets: [
+        {
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            data: [65, 59, 80, 81, 56, 55,  <%= l %>]
+        }
+    ]
+  },
+  latestLabel = startingData.labels[6];
+var myLiveChart = new Chart(ctx).Line(startingData, {animationSteps: 15});
+$('#myForm').submit(function () {
+  var x = document.getElementById("myForm");
+  myLiveChart.addData([x.elements[0].value, x.elements[1].value], x.elements[2].value);
+  myLiveChart.removeData();
+  myForm.reset();
+  return false;
+});
+  </script>
+</body>
+</html>
